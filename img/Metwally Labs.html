@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://metwallylabs.com/frontendroadmap.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Google Tag Manager -->
+        <script type="text/javascript" async="" src="./Metwally Labs_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Metwally Labs_files/js"></script><script type="text/javascript" async="" src="./Metwally Labs_files/js(1)"></script><script async="" src="./Metwally Labs_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PG3VDJ5');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="./Metwally Labs_files/js(2)"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());gtag('config', 'UA-111647017-1');</script>
+        <meta name="google-site-verification" content="iCMNS3cLbu7wGRGcwUfqTHH_J1KaQk9EaPOqyiPXocA">
+        <link rel="icon" sizes="16x16 32x32" href="https://metwallylabs.com/favicon.ico?v=2">
+        <title>Metwally Labs</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="./Metwally Labs_files/main.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+
+        <style>
+            @font-face {
+                font-family: Fredoka;
+                src: url(FredokaOne-Regular.ttf);
+            }
+            @font-face {
+                font-family: opensans;
+                src: url(OpenSans-Regular.ttf);
+                font-weight: normal;
+            }
+
+
+            .mapcontainer {  display: grid;
+          grid-template-columns: 0.1fr 2.2fr 1fr;
+          grid-template-rows: 0.5fr 3fr 3fr 3fr 3fr 3fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "roadmap_name roadmap_name reading_list_head"
+            "phase_1 phase_1_body phase_1_rl"
+            "phase_2 phase_2_body phase_2_rl"
+            "phase_3 phase_3_body phase_3_rl"
+            "phase_4 phase_4_body phase_4_rl"
+            "phase_5 phase_5_body phase_5_rl";
+
+            font-size: 20pt;
+            font-family: Fredoka;
+            min-width: 1000px;
+        }
+        .name_color {background-color: #059652;}
+        .rh_color {background-color: #015f25;}
+        .rh_body_color {background-color: #d9d6d6;}
+        .body_color {background-color: #ebebea;}
+        .phase_name_color {background-color: #9fecb9;}
+
+        .head_name_color {color:white}
+        .roadmap_name_style {font-size: 30pt!important;}
+        .padd {padding: 25px; margin: 1px;}
+
+        .pns {
+            padding: 80px 25px;
+            vertical-align: middle;
+            text-align: center;            
+        }
+        
+
+        .roadmap_name { grid-area: roadmap_name; }
+        
+        .reading_list_head { grid-area: reading_list_head; }
+        
+        .phase_1 { grid-area: phase_1; }
+        
+        .phase_1_body { grid-area: phase_1_body; }
+        
+        .phase_1_rl { grid-area: phase_1_rl; }
+        
+        .phase_2 { grid-area: phase_2; }
+        
+        .phase_2_body { grid-area: phase_2_body; }
+        
+        .phase_2_rl { grid-area: phase_2_rl; }
+        
+        .phase_3 { grid-area: phase_3; }
+        
+        .phase_3_body { grid-area: phase_3_body; }
+        
+        .phase_3_rl { grid-area: phase_3_rl; }
+        
+        .phase_4 { grid-area: phase_4; }
+        
+        .phase_4_body { grid-area: phase_4_body; }
+        
+        .phase_4_rl { grid-area: phase_4_rl; }
+        
+        .phase_5 { grid-area: phase_5; }
+        
+        .phase_5_body { grid-area: phase_5_body; }
+        
+        .phase_5_rl { grid-area: phase_5_rl; }
+
+
+
+        .rotate {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        .phase_container {
+            display: flex;
+        }
+
+        .phase_part{
+            margin-left: 40px;
+            font-family: opensans;
+            font-size: 16pt;
+            max-width: 300px;
+        }
+        .phase_part_name{
+            padding: 10px;
+            border: 2px solid rgb(209, 66, 0);
+            border-radius: 20px;
+            background-color: white;
+            min-width: 100px;
+            max-width: 150px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .phase_part_list{
+            padding: 10px;
+            border-left: 2px;
+            border-right: 0px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-color: rgb(209, 66, 0);
+            border-style: solid;
+            border-radius: 20px;
+        }
+
+        
+        </style>
+
+    </head>
+    <body class="">
+
+        <!-- Header -->
+            <div id="header">
+                <!-- <span class="logo icon fa-paper-plane-o"></span> -->
+                <a href="https://metwallylabs.com/"><img src="./Metwally Labs_files/logo_small.png" alt=""></a>
+                
+            </div>
+
+        <!-- Main -->
+            <div id="main">
+                <div style="width: 100%; text-align: center;">
+                    <iframe width="560" height="315" src="./Metwally Labs_files/uheOkfZgUf0.html" title="Metwallylabs frontend roadmap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    
+                </div>
+                <div class="mapcontainer padd">
+                    <div class="roadmap_name name_color roadmap_name_style padd head_name_color">
+                        Frontend Roadmap
+                    </div>
+                    <div class="reading_list_head rh_color padd head_name_color">
+                        Reading List
+                    </div>
+                    
+                    
+                    <div class="phase_1 phase_name_color padd pns head_name_color">
+                        <p class="rotate">Phase 1</p>
+                    </div>
+                    <div id="phase1" class="phase_1_body body_color padd phase_container">
+                    <div class="phase_part">
+                        <div class="phase_part_name">
+                            Web Pages Structure
+                        </div>
+                        <div class="phase_part_list">
+                            - HTML5 <br> - CSS [advanced]
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            Vanilla JavaScript
+                        </div>
+                        <div class="phase_part_list">
+                            - Everything you can learn about it.
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            Code tools
+                        </div>
+                        <div class="phase_part_list">
+                            - Git &amp; gitflow <br> - Unit Test
+                        </div></div></div>
+                    <div id="rl1" class="phase_1_rl rh_body_color padd"><div class="phase_part"><div class="phase_part_list">
+                                - Color Theory <br> - Computer Hardware Architecture <br> - How Memory works
+                            </div></div></div>
+        
+        
+                    <div class="phase_2 phase_name_color padd pns head_name_color">
+                        <p class="rotate">Phase 2</p>
+                    </div>
+                    <div id="phase2" class="phase_2_body body_color padd phase_container"><div class="phase_part">
+                        <div class="phase_part_name">
+                            Data Structure 01
+                        </div>
+                        <div class="phase_part_list">
+                            - Arrays <br> - Linked Lists <br> - Stacks <br> - Queues
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            Data Structure 02
+                        </div>
+                        <div class="phase_part_list">
+                            - Hash Tables <br> - Trees <br> - Heaps <br> - Graphs
+                        </div></div></div>
+                    <div id="rl2" class="phase_2_rl rh_body_color padd"><div class="phase_part"><div class="phase_part_list">
+                                - Algorithms
+                            </div></div></div>
+                    
+        
+                    <div class="phase_3 phase_name_color padd pns head_name_color">
+                        <p class="rotate">Phase 3</p>
+                    </div>
+                    <div id="phase3" class="phase_3_body body_color padd phase_container"><div class="phase_part">
+                        <div class="phase_part_name">
+                            Web Protocols
+                        </div>
+                        <div class="phase_part_list">
+                            - <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a> <br> - WebSocket
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            Networks
+                        </div>
+                        <div class="phase_part_list">
+                            - Basics
+                        </div></div></div>
+                    <div id="rl3" class="phase_3_rl rh_body_color padd"><div class="phase_part"><div class="phase_part_list">
+                                - OSI <br> - DNS <br> - What is the Internet!
+                            </div></div></div>
+                    
+        
+                    <div class="phase_4 phase_name_color padd pns head_name_color">
+                        <p class="rotate">Phase 4</p>
+                    </div>
+                    <div id="phase4" class="phase_4_body body_color padd phase_container"><div class="phase_part">
+                        <div class="phase_part_name">
+                            Frameworks
+                        </div>
+                        <div class="phase_part_list">
+                            - React (JS) <br> - Redux <br> - React Bootstrap
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            API
+                        </div>
+                        <div class="phase_part_list">
+                            - How to Consume HTTP RESTful APIs <br> - <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Glossary/CORS">CORS</a> <br> - Nginx web server
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            Web Design patterns
+                        </div>
+                        <div class="phase_part_list">
+                            - <a target="_blank" href="https://www.patterns.dev/">patterns.dev</a>
+                        </div></div></div>
+                    <div id="rl4" class="phase_4_rl rh_body_color padd"><div class="phase_part"><div class="phase_part_list">
+                                - Single Page application <br> - jQuery <br> - sass-lang <br> - tailwindcss
+                            </div></div></div>
+                    
+        
+                    <div class="phase_5 phase_name_color padd pns head_name_color">
+                        <p class="rotate">Phase 5</p>
+                    </div>
+                    <div id="phase5" class="phase_5_body body_color padd phase_container"><div class="phase_part">
+                        <div class="phase_part_name">
+                            Containers
+                        </div>
+                        <div class="phase_part_list">
+                            - Docker
+                        </div></div><div class="phase_part">
+                        <div class="phase_part_name">
+                            Security
+                        </div>
+                        <div class="phase_part_list">
+                            - Inputs Sanitization <br> - XSS <br> - CSRF
+                        </div></div></div>
+                    <div id="rl5" class="phase_5_rl rh_body_color padd"><div class="phase_part"><div class="phase_part_list">
+                                - Virtual Machines [EC2] <br> - Object Storage [S3] <br> -  <br> - Critical Thinking
+                            </div></div></div>
+
+
+                  </div>
+        
+                <script>
+                    
+                        var subjects = [
+                            {name: "Web Pages Structure", sub: ["HTML5", "CSS [advanced]"], phase:"phase1"},
+                            {name: "Vanilla JavaScript", sub: ["Everything you can learn about it."], phase:"phase1"},
+                            {name: "Code tools", sub: ["Git & gitflow", "Unit Test"], phase:"phase1"},
+
+                            {name: "Data Structure 01", sub: ["Arrays", "Linked Lists", "Stacks", "Queues"], phase:"phase2"},
+                            {name: "Data Structure 02", sub: ["Hash Tables", "Trees", "Heaps", "Graphs"], phase:"phase2"},
+
+                            {name: "Web Protocols", sub: ["<a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP\">HTTP</a>", "WebSocket"], phase:"phase3"},
+                            {name: "Networks", sub: ["Basics"], phase:"phase3"},
+
+                            {name: "Frameworks", sub: ["React (JS)", "Redux", "React Bootstrap"], phase:"phase4"},
+                            {name: "API", sub: ["How to Consume HTTP RESTful APIs", "<a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Glossary/CORS\">CORS</a>", "Nginx web server"], phase:"phase4"},
+                            {name: "Web Design patterns", sub: ["<a target=\"_blank\" href=\"https://www.patterns.dev/\">patterns.dev</a>"], phase:"phase4"},
+
+                            {name: "Containers", sub: ["Docker"], phase:"phase5"},
+                            {name: "Security", sub: ["Inputs Sanitization", "XSS", "CSRF"], phase:"phase5"}
+
+                            
+                        ]
+        
+                        let div=document.createElement("div");
+                        div.className = "phase_part";
+        
+                        var subject_template = `
+                        <div class="phase_part_name">
+                            {{0}}
+                        </div>
+                        <div class="phase_part_list">
+                            {{1}}
+                        </div>`;
+        
+                        subjects.forEach(ph => {
+                            div.innerHTML= subject_template.replace('{{0}}', ph.name).replace('{{1}}', '- ' + ph.sub.join(' <br/> - '));
+                            document.getElementById(ph.phase).appendChild(div.cloneNode(true));
+                        });
+        
+                        var reading_lists = [
+                            {name: "rl1", list: ["Color Theory", "Computer Hardware Architecture", "How Memory works"]},
+                            
+                            {name: "rl2", list: ["Algorithms"]},
+                            
+                            {name: "rl3", list: ["OSI", "DNS", "What is the Internet!"]},
+
+                            {name: "rl4", list: ["Single Page application", "jQuery", "sass-lang", "tailwindcss"]},
+                            
+                            {name: "rl5", list: ["Virtual Machines [EC2]", "Object Storage [S3]", "", "Critical Thinking"]}
+                        ];
+        
+                        let rl_div =document.createElement("div");
+                        rl_div.className = "phase_part";
+                        var rl_template = `<div class="phase_part_list">
+                                {{0}}
+                            </div>`;
+        
+                        reading_lists.forEach(rl => {
+                            rl_div.innerHTML= rl_template.replace('{{0}}', '- ' + rl.list.join(' <br/> - '));
+                            document.getElementById(rl.name).appendChild(rl_div.cloneNode(true));    
+                        });
+        
+                        
+                        
+        
+                </script>
+
+
+            </div>
+
+        <!-- Footer -->
+            <div id="footer">
+                <div class="container 75%">
+
+                    <header class="major last">
+                        <h2>Contact and follow us</h2>
+                    </header>
+
+                    <h4>info@metwallylabs.com</h4>
+
+
+                    <ul class="icons">
+                        <li><a target="_blank" href="https://www.facebook.com/metwallylabs/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/channel/UCQFR7eBvWA0yaX60TaxZnMw/" class="icon fa-youtube"><span class="label">youtube</span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/metwallylabs/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+                        <!-- <li><a target="_blank" href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    </ul>
+
+                    <ul class="copyright">
+                        <li>© Metwallylabs. All rights reserved.</li><li>Design: HTML5 UP</li><li>Photos: unsplash</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+    
+
+        <!-- Scripts -->
+            <script src="./Metwally Labs_files/jquery.min.js.download"></script>
+            <script src="./Metwally Labs_files/skel.min.js.download"></script>
+            <script src="./Metwally Labs_files/util.js.download"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="./Metwally Labs_files/main.js.download"></script>
+
+    
+
+
+</body></html>
